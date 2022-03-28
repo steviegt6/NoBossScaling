@@ -8,3 +8,5 @@ All configurable stats:
  * Knockback Resistance
 
 All of these stats can be disabled globally. You can preserve scaling for specific NPCs through whitelists in the config. There is a global whitelist and a whitelist provided for each specified stat.
+
+Made as a commission for mars#3486 -- thanks!
