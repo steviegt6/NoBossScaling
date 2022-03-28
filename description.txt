@@ -1,3 +1,10 @@
 Adds a server-side config for handling the scaling of stats in multiplayer with Expert Mode or Master Mode enabled.
 
-You can fully enable/disable health and damage scaling. Additionally, three whitelists are provided: one to preserve health scaling for individual NPCs, one to preserve damage scaling for individual NPCs, and one to preserve scaling of both stats for individual NPCs.
+All configurable stats:
+ * Health
+ * Damage
+ * Defense
+ * Size
+ * Knockback Resistance
+
+All of these stats can be disabled globally. You can preserve scaling for specific NPCs through whitelists in the config. There is a global whitelist and a whitelist provided for each specified stat.
