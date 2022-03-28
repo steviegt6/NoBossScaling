@@ -1,0 +1,1 @@
+Prevents boss' health from scaling in Expert mode and Master mode. Mostly intended for already-challenging fights and large servers.

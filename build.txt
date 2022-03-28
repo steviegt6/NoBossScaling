@@ -1,0 +1,3 @@
+displayName = No Expert Boss MP HP Scaling
+author = Tomat
+version = 1.0.0
