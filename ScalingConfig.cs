@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
 
@@ -63,12 +64,7 @@ namespace NoBossScaling
         [Tooltip("Whitelist NPCs that should preserve their knockback resistance scaling.")]
         public List<NPCDefinition> KbWhitelist { get; set; } = new();
 
-        public bool IsWhitelisted(int type, List<NPCDefinition> whitelist)
-        {
-            NPCDefinition def = new(type);
-
-            return whitelist.Contains(def) || GlobalWhitelist.Contains(def);
-        }
+        public bool IsWhitelisted(int type, List<NPCDefinition> whitelist) => whitelist.Any(x => x.Type == type) || GlobalWhitelist.Any(x => x.Type == type);
 
         public bool ShouldScaleHealth(int type) => !DisableAllHealth && !IsWhitelisted(type, HealthWhitelist);
         
